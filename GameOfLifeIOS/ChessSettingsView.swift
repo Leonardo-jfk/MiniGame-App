@@ -18,7 +18,7 @@ struct ChessSettingsView: View {
     @Environment(\.dismiss) var dismiss
     
     // Utilisation de AppStorage pour sauvegarder les choix
-    @AppStorage("aiDifficulty") private var aiDifficulty = AIDifficulty.medium.rawValue
+    @AppStorage("BotDifficulty") private var botDifficulty = BotDifficulty.medium.rawValue
     @AppStorage("boardTheme") private var boardTheme = BoardTheme.classic.rawValue
     @AppStorage("soundEnabled") private var soundEnabled = true
     @AppStorage("hapticEnabled") private var hapticEnabled = true
@@ -44,10 +44,10 @@ struct ChessSettingsView: View {
                     // SECTION : JEU
                     Section(header: Text("Paramètres du Jeu").foregroundColor(.white)) {
                         HStack {
-                            Label("Difficulté IA", systemImage: "cpu")
+                            Label("Difficulté", systemImage: "cpu")
                             Spacer()
-                            Picker("", selection: $aiDifficulty) {
-                                ForEach(AIDifficulty.allCases, id: \.self) { diff in
+                            Picker("", selection: $botDifficulty) {
+                                ForEach(botDifficulty.allCases, id: \.self) { diff in
                                     Text(diff.rawValue).tag(diff.rawValue)
                                 }
                             }

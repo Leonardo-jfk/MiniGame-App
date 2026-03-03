@@ -50,7 +50,7 @@ enum GameEndReason {
     // etc.
 }
 
-enum AIDifficulty: String, CaseIterable {
+enum BotDifficulty: String, CaseIterable {
     case easy = "Facile"
     case medium = "Moyen"
     case hard = "Expert"
