@@ -23,6 +23,12 @@ struct ChessSettingsView: View {
     @AppStorage("soundEnabled") private var soundEnabled = true
     @AppStorage("hapticEnabled") private var hapticEnabled = true
     //ff
+    
+//    @AppStorage("soundEnabled") private var soundEnabled = true
+//       @AppStorage("hapticEnabled") private var hapticEnabled = true
+       
+       @AppStorage("musicEnabled") private var musicEnabled: Bool = true
+          @StateObject private var audioManager = AudioManager.shared
     var body: some View {
         NavigationView {
             ZStack {
@@ -60,6 +66,14 @@ struct ChessSettingsView: View {
                         }
                     }
                     .listRowBackground(Color.white.opacity(0.1))
+                    Section("music"){
+                                                           Toggle("music's switch", isOn: $audioManager.musicEnabled)
+                                                           if musicEnabled {
+                                                               Slider(value: $audioManager.musicVolume, in: 0...1, step: 0.1)
+                                                                   .tint(.blue)
+                                                           }
+                                                       }
+                    
                     
                     // SECTION : AUDIO & RETOURS
                     Section(header: Text("Audio & Vibrations").foregroundColor(.white)) {

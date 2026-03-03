@@ -78,9 +78,9 @@ final class AudioManager: ObservableObject {
         // If already playing, do nothing
         if let player, player.isPlaying { return }
 
-        guard let url = Bundle.main.url(forResource: "BackClassical", withExtension: "mp3") else {
+        guard let url = Bundle.main.url(forResource: "samurai2", withExtension: "mp3") else {
             // If your file has a different name or type, adjust above.
-            print("AudioManager: BackClassical.mp3 not found in bundle.")
+            print("AudioManager: Samunar2.mp3 not found in bundle.")
             return
         }
 
