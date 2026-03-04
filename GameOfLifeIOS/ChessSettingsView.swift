@@ -122,7 +122,7 @@ struct ChessSettingsView: View {
     @AppStorage("musicEnabled") private var musicEnabled = true
     
     @StateObject private var audioManager = AudioManager.shared
-    @State  var isVsBot = false
+    @State  var isVsBot: Bool
     
     var body: some View {
         NavigationView {

@@ -144,7 +144,7 @@ struct ChessBot: View {
                         }
                     }
                     .sheet(isPresented: $showSettings) {
-                        ChessSettingsView()
+                        ChessSettingsView(isVsBot: isVsBot)
                     }
                 }
                 .padding(.bottom, 20)
