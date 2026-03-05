@@ -72,12 +72,12 @@ struct ChessSquareView: View {
                     Image("WoodLight")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .border(Color.red, width: 2) // Bordure de test
+//                        .border(Color.gray, width: 3) // Bordure de test
                 } else {
                     Image("WoodDark")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .border(Color.blue, width: 2) // Bordure de test
+//                        .border(Color.gray, width: 3) // Bordure de test
                 }
             } else {
                 // Autres thèmes
