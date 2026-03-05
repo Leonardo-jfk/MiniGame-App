@@ -837,9 +837,224 @@ class ChessGame: ObservableObject {
         }
     }
     
+    struct BoardThemeColors {
+        let lightSquare: Color
+        let darkSquare: Color
+        let borderColor: Color
+        let highlightColor: Color
+        let checkColor: Color
+        
+        // Propriétés pour les images de fond
+        var lightSquareImage: Image? = nil
+        var darkSquareImage: Image? = nil
+    }
+
+    class ThemeManager: ObservableObject {
+        static let shared = ThemeManager()
+        
+        @AppStorage("boardTheme") var currentTheme: String = BoardTheme.classic.rawValue {
+            didSet {
+                objectWillChange.send()
+            }
+        }
+        
+        func getColors(for theme: String) -> BoardThemeColors {
+            switch theme {
+            case BoardTheme.classic.rawValue:
+                return BoardThemeColors(
+                    lightSquare: Color(red: 0.94, green: 0.86, blue: 0.76),
+                    darkSquare: Color(red: 0.56, green: 0.41, blue: 0.26),
+                    borderColor: .brown,
+                    highlightColor: .green.opacity(0.5),
+                    checkColor: .red.opacity(0.7)
+                )
+                
+            case BoardTheme.wood.rawValue:
+                return BoardThemeColors(
+                    lightSquare: .clear,
+                    darkSquare: .clear,
+                    borderColor: Color(red: 0.36, green: 0.25, blue: 0.15),
+                    highlightColor: .yellow.opacity(0.4),
+                    checkColor: .orange.opacity(0.8),
+                    lightSquareImage: Image("WoodLight"),
+                    darkSquareImage: Image("WoodDark")
+                )
+                
+            case BoardTheme.purple.rawValue:
+                return BoardThemeColors(
+                    lightSquare: Color(red: 0.9, green: 0.8, blue: 0.95),
+                    darkSquare: Color(red: 0.5, green: 0.3, blue: 0.7),
+                    borderColor: .purple,
+                    highlightColor: .cyan.opacity(0.5),
+                    checkColor: .pink.opacity(0.8)
+                )
+                
+            default:
+                return BoardThemeColors(
+                    lightSquare: Color(red: 0.94, green: 0.86, blue: 0.76),
+                    darkSquare: Color(red: 0.56, green: 0.41, blue: 0.26),
+                    borderColor: .brown,
+                    highlightColor: .green.opacity(0.5),
+                    checkColor: .red.opacity(0.7)
+                )
+            }
+        }
+        
+        var currentColors: BoardThemeColors {
+            getColors(for: currentTheme)
+        }
+    }
+    
+    
+    // MARK: - StyledBoardView.swift
+    struct StyledBoardView: View {
+        @ObservedObject var game: ChessGame
+        let gradientColors: [Color]
+        @StateObject private var themeManager = ThemeManager.shared
+        
+        var body: some View {
+            VStack(spacing: 0) {
+                ForEach(0..<8, id: \.self) { row in
+                    HStack(spacing: 0) {
+                        ForEach(0..<8, id: \.self) { col in
+                            ThemedChessSquare(
+                                row: row,
+                                col: col,
+                                piece: game.board[row][col],
+                                isSelected: game.selectedPiece?.position.row == row &&
+                                           game.selectedPiece?.position.col == col,
+                                isValidMove: game.validMoves.contains { $0.0 == row && $0.1 == col },
+                                isKingInCheck: game.isKingAtRisk(row: row, col: col),
+                                themeColors: themeManager.currentColors
+                            ) {
+                                if let piece = game.board[row][col] {
+                                    game.selectPiece(at: row, col: col)
+                                } else if !game.validMoves.isEmpty {
+                                    game.movePiece(to: row, col: col)
+                                } else {
+                                    game.selectPiece(at: row, col: col)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .overlay(
+                RoundedRectangle(cornerRadius: 10)
+                    .stroke(themeManager.currentColors.borderColor, lineWidth: 3)
+            )
+            .clipShape(RoundedRectangle(cornerRadius: 8))
+            .shadow(radius: 10)
+            .onChange(of: themeManager.currentTheme) { oldValue, newValue in
+                game.objectWillChange.send()
+            }
+        }
+    }
+    
+    
+    
+    // MARK: - ThemedChessSquare.swift
+    struct ThemedChessSquare: View {
+        let row: Int
+        let col: Int
+        let piece: ChessPiece?
+        let isSelected: Bool
+        let isValidMove: Bool
+        let isKingInCheck: Bool
+        let themeColors: BoardThemeColors
+        let action: () -> Void
+        
+        private var isLightSquare: Bool {
+            (row + col) % 2 == 0
+        }
+        
+        var body: some View {
+            Button(action: action) {
+                ZStack {
+                    // Fond de la case avec image ou couleur
+                    Group {
+                        if isLightSquare {
+                            if let image = themeColors.lightSquareImage {
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                            } else {
+                                Rectangle()
+                                    .fill(themeColors.lightSquare)
+                            }
+                        } else {
+                            if let image = themeColors.darkSquareImage {
+                                image
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                            } else {
+                                Rectangle()
+                                    .fill(themeColors.darkSquare)
+                            }
+                        }
+                    }
+                    .overlay(
+                        Rectangle()
+                            .stroke(themeColors.borderColor, lineWidth: 1)
+                    )
+                    
+                    // Surbrillance pour la case sélectionnée
+                    if isSelected {
+                        Rectangle()
+                            .stroke(Color.blue, lineWidth: 3)
+                            .padding(2)
+                    }
+                    
+                    // Surbrillance pour le mouvement valide
+                    if isValidMove {
+                        if piece == nil {
+                            // Case vide : cercle
+                            Circle()
+                                .fill(themeColors.highlightColor)
+                                .frame(width: 30, height: 30)
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white, lineWidth: 1)
+                                )
+                        } else {
+                            // Case avec pièce : contour
+                            Rectangle()
+                                .stroke(themeColors.highlightColor, lineWidth: 4)
+                        }
+                    }
+                    
+                    // Surbrillance rouge si le roi est en échec
+                    if isKingInCheck {
+                        Rectangle()
+                            .fill(themeColors.checkColor)
+                            .opacity(0.3)
+                    }
+                    
+                    // La pièce d'échec
+                    if let piece = piece {
+                        Text(piece.type.rawValue)
+                            .font(.system(size: 40))
+                            .foregroundColor(piece.color == .white ? .white : .black)
+                            .shadow(color: .black.opacity(0.5), radius: 3, x: 2, y: 2)
+                            .shadow(color: .white.opacity(0.3), radius: 2, x: -1, y: -1)
+                    }
+                }
+            }
+            .frame(height: UIScreen.main.bounds.width / 9)
+            .clipShape(Rectangle())
+        }
+    }
+    
+    
+    
+    
     
     
     //gg
+    
+    
+    
+    
 }
 
 
