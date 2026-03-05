@@ -39,10 +39,123 @@ extension Color {
 }
 
 // MARK: - ChessSquareView
+//struct ChessSquareView: View {
+//    @ObservedObject var game: ChessGame
+//    let row: Int
+//    let col: Int
+//    
+//    var isSelected: Bool {
+//        game.selectedPiece?.position.row == row &&
+//        game.selectedPiece?.position.col == col
+//    }
+//    
+//    var isValidMove: Bool {
+//        game.validMoves.contains { $0.row == row && $0.col == col }
+//    }
+//    
+//    var isLightSquare: Bool {
+//        (row + col) % 2 == 0
+//    }
+//    
+////    var isKingUnderAttack: Bool {
+////            game.isKingAtRisk(row: row, col: col)
+////        }
+////    var isQueenUnderAttack: Bool {
+////        game.isQueenAtRisk(row: row, col: col)
+////    }
+//    var isUnderAttack: Bool {
+//        guard let piece = game.board[row][col] else { return false }
+//        
+//        switch piece.type {
+//        case .king:
+//            return game.isKingInCheck(of: piece.color)
+//        case .queen:
+//            return game.isQueenInCheck(of: piece.color)
+//        default:
+//            return false
+//        }
+//    }
+//    
+//    var body: some View {
+//        ZStack {
+//            // Fond de la case
+//            Rectangle()
+//                .fill(isLightSquare ? Color.gray.opacity(1) : Color.gray.opacity(0.4))
+////                .fill(isLightSquare ? Color(hex: "#F0D9B5") : Color(hex: "#B58863"))
+//                .overlay(
+//                    Group {
+//                        if isSelected {
+//                            Rectangle()
+//                                .strokeBorder(Color.black, lineWidth: 4)
+//                                .padding(2)
+//                        } else if isValidMove {
+//                            Circle()
+//                                .fill(Color.black.opacity(0.4))
+//                                .padding(5)
+//                        }
+//                    }
+//                )
+//            
+//            // --- CERCLE D'ATTENTION (ROI EN ÉCHEC) ---
+////            if isKingUnderAttack {
+////                Circle()
+////                    .fill(Color.red.opacity(0.3))
+////                    .shadow(color: .red, radius: 10)
+////                    .padding(2)
+////                
+////                Circle()
+////                    .stroke(Color.red, lineWidth: 2)
+////                    .padding(2)
+////            }
+////            if isQueenUnderAttack{
+////                Circle()
+////                    .fill(Color.red.opacity(0.3))
+////                    .shadow(color: .red, radius: 10)
+////                    .padding(2)
+//            //
+//            //                Circle()
+//            //                    .stroke(Color.red, lineWidth: 2)
+//            //                    .padding(2)
+//            //            }
+//            if isUnderAttack{
+//                Circle()
+//                    .fill(Color.red.opacity(0.3))
+//                    .shadow(color: .red, radius: 10)
+//                    .padding(2)
+//                
+//                Circle()
+//                    .stroke(Color.red, lineWidth: 2)
+//                    .padding(2)
+//            }
+//            
+//            
+//            
+//            // Pièce d'échecs
+//            if let piece = game.board[row][col] {
+//                Text(piece.type.rawValue)
+//                    .font(.system(size: 30))
+//                    .foregroundColor(piece.color == .white ? .white : .black)
+//                    .shadow(color: .gray, radius: 1)
+//            }
+//        }
+//        .aspectRatio(1, contentMode: .fit)
+//        .onTapGesture {
+//            if let selected = game.selectedPiece, isValidMove {
+//                game.movePiece(to: row, col: col)
+//            } else {
+//                game.selectPiece(at: row, col: col)
+//            }
+//        }
+//    }
+//}
+
+
+// MARK: - ChessSquareView
 struct ChessSquareView: View {
     @ObservedObject var game: ChessGame
     let row: Int
     let col: Int
+    @StateObject private var themeManager = ThemeManager.shared
     
     var isSelected: Bool {
         game.selectedPiece?.position.row == row &&
@@ -57,12 +170,6 @@ struct ChessSquareView: View {
         (row + col) % 2 == 0
     }
     
-//    var isKingUnderAttack: Bool {
-//            game.isKingAtRisk(row: row, col: col)
-//        }
-//    var isQueenUnderAttack: Bool {
-//        game.isQueenAtRisk(row: row, col: col)
-//    }
     var isUnderAttack: Bool {
         guard let piece = game.board[row][col] else { return false }
         
@@ -78,64 +185,73 @@ struct ChessSquareView: View {
     
     var body: some View {
         ZStack {
-            // Fond de la case
-            Rectangle()
-                .fill(isLightSquare ? Color.gray.opacity(1) : Color.gray.opacity(0.4))
-//                .fill(isLightSquare ? Color(hex: "#F0D9B5") : Color(hex: "#B58863"))
-                .overlay(
-                    Group {
-                        if isSelected {
-                            Rectangle()
-                                .strokeBorder(Color.black, lineWidth: 4)
-                                .padding(2)
-                        } else if isValidMove {
+            // Fond de la case avec le thème
+            Group {
+                if isLightSquare {
+                    if let image = themeManager.currentColors.lightSquareImage {
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } else {
+                        Rectangle()
+                            .fill(themeManager.currentColors.lightSquare)
+                    }
+                } else {
+                    if let image = themeManager.currentColors.darkSquareImage {
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    } else {
+                        Rectangle()
+                            .fill(themeManager.currentColors.darkSquare)
+                    }
+                }
+            }
+            .overlay(
+                Group {
+                    if isSelected {
+                        Rectangle()
+                            .strokeBorder(Color.blue, lineWidth: 4)
+                            .padding(2)
+                    } else if isValidMove {
+                        if game.board[row][col] == nil {
+                            // Case vide : cercle de mouvement
                             Circle()
-                                .fill(Color.black.opacity(0.4))
-                                .padding(5)
+                                .fill(themeManager.currentColors.highlightColor)
+                                .frame(width: 30, height: 30)
+                                .overlay(
+                                    Circle()
+                                        .stroke(Color.white, lineWidth: 1)
+                                )
+                        } else {
+                            // Case avec pièce : contour de capture
+                            Rectangle()
+                                .stroke(themeManager.currentColors.highlightColor, lineWidth: 4)
                         }
                     }
-                )
+                }
+            )
             
-            // --- CERCLE D'ATTENTION (ROI EN ÉCHEC) ---
-//            if isKingUnderAttack {
-//                Circle()
-//                    .fill(Color.red.opacity(0.3))
-//                    .shadow(color: .red, radius: 10)
-//                    .padding(2)
-//                
-//                Circle()
-//                    .stroke(Color.red, lineWidth: 2)
-//                    .padding(2)
-//            }
-//            if isQueenUnderAttack{
-//                Circle()
-//                    .fill(Color.red.opacity(0.3))
-//                    .shadow(color: .red, radius: 10)
-//                    .padding(2)
-            //
-            //                Circle()
-            //                    .stroke(Color.red, lineWidth: 2)
-            //                    .padding(2)
-            //            }
-            if isUnderAttack{
+            // Indicateur d'attaque (roi/queen en échec)
+            if isUnderAttack {
                 Circle()
-                    .fill(Color.red.opacity(0.3))
-                    .shadow(color: .red, radius: 10)
+                    .fill(themeManager.currentColors.checkColor)
+                    .opacity(0.3)
+                    .shadow(color: themeManager.currentColors.checkColor, radius: 10)
                     .padding(2)
                 
                 Circle()
-                    .stroke(Color.red, lineWidth: 2)
+                    .stroke(themeManager.currentColors.checkColor, lineWidth: 2)
                     .padding(2)
             }
-            
-            
             
             // Pièce d'échecs
             if let piece = game.board[row][col] {
                 Text(piece.type.rawValue)
                     .font(.system(size: 30))
                     .foregroundColor(piece.color == .white ? .white : .black)
-                    .shadow(color: .gray, radius: 1)
+                    .shadow(color: .black.opacity(0.5), radius: 3, x: 2, y: 2)
+                    .shadow(color: .white.opacity(0.3), radius: 2, x: -1, y: -1)
             }
         }
         .aspectRatio(1, contentMode: .fit)
@@ -148,6 +264,14 @@ struct ChessSquareView: View {
         }
     }
 }
+
+
+
+
+
+
+
+
 
 // MARK: - ChessBoardView
 struct ChessBoardView: View {
@@ -249,9 +373,52 @@ struct CapturedPiecesView: View {
 
 
 // MARK: - StyledBoardView (Le design centralisé)
+//struct StyledBoardView: View {
+//    @ObservedObject var game: ChessGame
+//    let gradientColors: [Color] // On permet de changer les couleurs selon le mode
+//    
+//    var body: some View {
+//        VStack {
+//            ChessBoardView(game: game)
+//                .padding(5)
+//                .background(Color.black.opacity(0.3))
+//                .clipShape(RoundedRectangle(cornerRadius: 20))
+//                .overlay(
+//                    RoundedRectangle(cornerRadius: 20)
+//                        .stroke(
+//                            LinearGradient(
+//                                colors: gradientColors,
+//                                startPoint: .topLeading,
+//                                endPoint: .bottomTrailing
+//                            ),
+//                            lineWidth: 10
+//                        )
+//                )
+//                .shadow(color: gradientColors.first?.opacity(0.3) ?? .clear, radius: 20)
+//                .overlay(alignment: .bottomLeading) {
+//                    if let selected = game.selectedPiece {
+//                        Text("Sélection : \(selected.type.rawValue)")
+//                            .font(.caption)
+//                            .bold()
+//                            .foregroundColor(.white)
+//                            .padding(8)
+//                            .background(Color.black.opacity(0.7))
+//                            .cornerRadius(10)
+//                            .padding(15)
+//                    }
+//                }
+//        }
+//    }
+//}
+
+
+
+
+// MARK: - StyledBoardView (Le design centralisé)
 struct StyledBoardView: View {
     @ObservedObject var game: ChessGame
     let gradientColors: [Color] // On permet de changer les couleurs selon le mode
+    @StateObject private var themeManager = ThemeManager.shared
     
     var body: some View {
         VStack {
@@ -270,7 +437,7 @@ struct StyledBoardView: View {
                             lineWidth: 10
                         )
                 )
-                .shadow(color: gradientColors.first?.opacity(0.3) ?? .clear, radius: 20)
+                .shadow(color: themeManager.currentColors.borderColor.opacity(0.5), radius: 20)
                 .overlay(alignment: .bottomLeading) {
                     if let selected = game.selectedPiece {
                         Text("Sélection : \(selected.type.rawValue)")
@@ -284,8 +451,17 @@ struct StyledBoardView: View {
                     }
                 }
         }
+        .onChange(of: themeManager.currentTheme) { oldValue, newValue in
+            // Forcer la mise à jour quand le thème change
+            game.objectWillChange.send()
+        }
     }
 }
+
+
+
+
+
 
 // MARK: - ControlButton
 struct ControlButton: View {
