@@ -15,7 +15,7 @@ import Combine
 
     struct ChessSettingsView: View {
         @Environment(\.dismiss) var dismiss
-//        @StateObject private var themeManager = ThemeManager.shared
+        @StateObject private var themeManager = ThemeManager.shared
         
         // On utilise les clés exactes de tes fichiers
         @AppStorage("BotDifficulty") private var botDifficulty = "Moyen"
