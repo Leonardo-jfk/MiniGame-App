@@ -188,10 +188,79 @@ struct CapturedPiecesView: View {
 
 
 // MARK: - StyledBoardView (Le design centralisé)
+//struct StyledBoardView: View {
+//    @ObservedObject var game: ChessGame
+//    let gradientColors: [Color] // On permet de changer les couleurs selon le mode
+//    @StateObject private var themeManager = ThemeManager.shared
+//    
+//    var body: some View {
+//        VStack {
+//            ChessBoardView(game: game)
+//                .padding(5)
+//                .background(Color.black.opacity(0.3))
+//                .clipShape(RoundedRectangle(cornerRadius: 20))
+//                .overlay(
+//                    RoundedRectangle(cornerRadius: 20)
+//                        .stroke(
+//                            LinearGradient(
+//                                colors: gradientColors,
+//                                startPoint: .topLeading,
+//                                endPoint: .bottomTrailing
+//                            ),
+//                            lineWidth: 10
+//                        )
+//                )
+//                .shadow(color: themeManager.currentColors.borderColor.opacity(0.5), radius: 20)
+//                .overlay(alignment: .bottomLeading) {
+//                    if let selected = game.selectedPiece {
+//                        Text("Sélection : \(selected.type.rawValue)")
+//                            .font(.caption)
+//                            .bold()
+//                            .foregroundColor(.white)
+//                            .padding(8)
+//                            .background(Color.black.opacity(0.7))
+//                            .cornerRadius(10)
+//                            .padding(15)
+//                    }
+//                }
+//        }
+//        .onChange(of: themeManager.currentTheme) { oldValue, newValue in
+//            // Forcer la mise à jour quand le thème change
+//            game.objectWillChange.send()
+//        }
+//    }
+//}
+// MARK: - StyledBoardView (Le design centralisé)
 struct StyledBoardView: View {
     @ObservedObject var game: ChessGame
-    let gradientColors: [Color] // On permet de changer les couleurs selon le mode
+    let gradientColors: [Color] // On garde pour la compatibilité
     @StateObject private var themeManager = ThemeManager.shared
+    
+    // Couleurs de bordure selon le thème (version plus riche)
+    private var borderColors: [Color] {
+        switch themeManager.currentTheme {
+        case BoardTheme.classic.rawValue:
+            return [
+                themeManager.currentColors.borderColor,
+                themeManager.currentColors.borderColor.opacity(0.7),
+                .orange.opacity(0.5)
+            ]
+        case BoardTheme.wood.rawValue:
+            return [
+                Color(red: 0.36, green: 0.25, blue: 0.15), // Brun foncé
+                Color(red: 0.52, green: 0.35, blue: 0.19), // Brun moyen
+                .orange.opacity(0.3)
+            ]
+        case BoardTheme.purple.rawValue:
+            return [
+                .purple,
+                themeManager.currentColors.borderColor,
+                .black.opacity(0.5)
+            ]
+        default:
+            return gradientColors
+        }
+    }
     
     var body: some View {
         VStack {
@@ -203,7 +272,7 @@ struct StyledBoardView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .stroke(
                             LinearGradient(
-                                colors: gradientColors,
+                                colors: borderColors,
                                 startPoint: .topLeading,
                                 endPoint: .bottomTrailing
                             ),
@@ -230,7 +299,6 @@ struct StyledBoardView: View {
         }
     }
 }
-
 
 
 

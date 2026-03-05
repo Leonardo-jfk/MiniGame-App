@@ -1,205 +1,217 @@
-2026-03-03 18:12:23 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x9db94de00; archive(resolved)="<IDEArchive: 0x9db917640>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team(resolved)="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+2026-03-05 16:29:06 +0000 [MT] Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0xc7f955e00; archive(resolved)="<IDEArchive: 0xc7f91f640>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team(resolved)="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
 	Chain (14, self inclusive):
-	<IDEDistributionProcessingPipelineContext: 0x9db94de00; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionProcessingPipelineContext: 0x9db94e100; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd82a300; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd829900; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd829680; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd829400; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd829180; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd828f00; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd828c80; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="<IDEProvisioningBasicTeam: 0x9db9dc400; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
-	<IDEDistributionContext: 0x9dd828a00; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="(null)">
-	<IDEDistributionContext: 0x9dd828780; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="(null)">
-	<IDEDistributionContext: 0x9dd828500; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="(null)">
-	<IDEDistributionContext: 0x100c6a950; archive = "<IDEArchive: 0x9db917640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x9ddda8140>", team="(null)">
-	<IDEDistributionContext: 0x100ca3570; archive = "<IDEArchive: 0x9db917640>", distributionMethod="(null)", team="(null)">
-</IDEDistributionProcessingPipelineContext: 0x9db94de00>
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionCopyItemStep
-2026-03-03 18:12:23 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app' '/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app'
-2026-03-03 18:12:23 +0000  >>> Copying /Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app 
-2026-03-03 18:12:23 +0000  copying file ./_CodeSignature/CodeResources ... 
-2026-03-03 18:12:23 +0000  5155 bytes for ./_CodeSignature/CodeResources
-2026-03-03 18:12:23 +0000  copying file ./AppIcon60x60@2x.png ... 
-2026-03-03 18:12:23 +0000  12867 bytes for ./AppIcon60x60@2x.png
-2026-03-03 18:12:23 +0000  copying file ./SciFiBack.json ... 
-2026-03-03 18:12:23 +0000  89026 bytes for ./SciFiBack.json
-2026-03-03 18:12:23 +0000  copying file ./GameOfLifeIOS ... 
-2026-03-03 18:12:23 +0000  808464 bytes for ./GameOfLifeIOS
-2026-03-03 18:12:23 +0000  copying file ./LoopBack.json ... 
-2026-03-03 18:12:23 +0000  19533 bytes for ./LoopBack.json
-2026-03-03 18:12:23 +0000  copying file ./Assets.car ... 
-2026-03-03 18:12:23 +0000  15646376 bytes for ./Assets.car
-2026-03-03 18:12:23 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
-2026-03-03 18:12:23 +0000  18357 bytes for ./AppIcon76x76@2x~ipad.png
-2026-03-03 18:12:23 +0000  copying file ./Meditation Skull.json ... 
-2026-03-03 18:12:23 +0000  86718 bytes for ./Meditation Skull.json
-2026-03-03 18:12:23 +0000  copying file ./batman.json ... 
-2026-03-03 18:12:23 +0000  30988 bytes for ./batman.json
-2026-03-03 18:12:23 +0000  copying file ./build_ipa.sh ... 
-2026-03-03 18:12:23 +0000  2205 bytes for ./build_ipa.sh
-2026-03-03 18:12:23 +0000  copying file ./Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources ... 
-2026-03-03 18:12:23 +0000  1798 bytes for ./Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources
-2026-03-03 18:12:23 +0000  copying file ./Frameworks/DotLottiePlayer.framework/DotLottiePlayer ... 
-2026-03-03 18:12:23 +0000  3000304 bytes for ./Frameworks/DotLottiePlayer.framework/DotLottiePlayer
-2026-03-03 18:12:23 +0000  copying file ./Frameworks/DotLottiePlayer.framework/Info.plist ... 
+	<IDEDistributionProcessingPipelineContext: 0xc7f955e00; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionProcessingPipelineContext: 0xc7f956100; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8e300; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8d900; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8d680; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8d400; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8d180; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8cf00; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8cc80; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="<IDEProvisioningBasicTeam: 0xc7f9dc100; teamID='QPGAAW2VT2', teamName='Leonardo Drake'>">
+	<IDEDistributionContext: 0xc81d8ca00; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="(null)">
+	<IDEDistributionContext: 0xc81d8c780; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="(null)">
+	<IDEDistributionContext: 0xc81d8c500; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="(null)">
+	<IDEDistributionContext: 0x100e266d0; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0xc81dac170>", team="(null)">
+	<IDEDistributionContext: 0x100e60680; archive = "<IDEArchive: 0xc7f91f640>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0xc7f955e00>
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionCreateDestRootStep
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionCopyItemStep
+2026-03-05 16:29:06 +0000 [MT] Running /usr/bin/ditto '-V' '/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app' '/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app'
+2026-03-05 16:29:06 +0000  >>> Copying /Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app 
+2026-03-05 16:29:06 +0000  copying file ./_CodeSignature/CodeResources ... 
+2026-03-05 16:29:06 +0000  5791 bytes for ./_CodeSignature/CodeResources
+2026-03-05 16:29:06 +0000  copying file ./WoodDark.png ... 
+2026-03-05 16:29:06 +0000  213499 bytes for ./WoodDark.png
+2026-03-05 16:29:06 +0000  copying file ./WoodLight.png ... 
+2026-03-05 16:29:06 +0000  152331 bytes for ./WoodLight.png
+2026-03-05 16:29:06 +0000  copying file ./AppIcon60x60@2x.png ... 
+2026-03-05 16:29:06 +0000  12867 bytes for ./AppIcon60x60@2x.png
+2026-03-05 16:29:06 +0000  copying file ./ChessSound.mp3 ... 
+2026-03-05 16:29:06 +0000  26374 bytes for ./ChessSound.mp3
+2026-03-05 16:29:06 +0000  copying file ./SciFiBack.json ... 
+2026-03-05 16:29:06 +0000  89026 bytes for ./SciFiBack.json
+2026-03-05 16:29:06 +0000  copying file ./GameOfLifeIOS ... 
+2026-03-05 16:29:06 +0000  876480 bytes for ./GameOfLifeIOS
+2026-03-05 16:29:06 +0000  copying file ./LoopBack.json ... 
+2026-03-05 16:29:06 +0000  19533 bytes for ./LoopBack.json
+2026-03-05 16:29:06 +0000  copying file ./Assets.car ... 
+2026-03-05 16:29:06 +0000  15822488 bytes for ./Assets.car
+2026-03-05 16:29:06 +0000  copying file ./AppIcon76x76@2x~ipad.png ... 
+18357 bytes for ./AppIcon76x76@2x~ipad.png
+copying file ./Meditation Skull.json ... 
+2026-03-05 16:29:06 +0000  86718 bytes for ./Meditation Skull.json
+2026-03-05 16:29:06 +0000  copying file ./batman.json ... 
+2026-03-05 16:29:06 +0000  30988 bytes for ./batman.json
+2026-03-05 16:29:06 +0000  copying file ./build_ipa.sh ... 
+2026-03-05 16:29:06 +0000  2205 bytes for ./build_ipa.sh
+2026-03-05 16:29:06 +0000  copying file ./Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources ... 
+2026-03-05 16:29:06 +0000  1798 bytes for ./Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources
+2026-03-05 16:29:06 +0000  copying file ./Frameworks/DotLottiePlayer.framework/DotLottiePlayer ... 
+2026-03-05 16:29:06 +0000  3000304 bytes for ./Frameworks/DotLottiePlayer.framework/DotLottiePlayer
+2026-03-05 16:29:06 +0000  copying file ./Frameworks/DotLottiePlayer.framework/Info.plist ... 
 767 bytes for ./Frameworks/DotLottiePlayer.framework/Info.plist
 copying file ./embedded.mobileprovision ... 
-2026-03-03 18:12:23 +0000  14319 bytes for ./embedded.mobileprovision
-2026-03-03 18:12:23 +0000  copying file ./Info.plist ... 
-2026-03-03 18:12:23 +0000  1432 bytes for ./Info.plist
-2026-03-03 18:12:23 +0000  copying file ./samurai2.mp3 ... 
-2026-03-03 18:12:23 +0000  58591076 bytes for ./samurai2.mp3
-2026-03-03 18:12:23 +0000  copying file ./PkgInfo ... 
-2026-03-03 18:12:23 +0000  8 bytes for ./PkgInfo
-2026-03-03 18:12:23 +0000  copying file ./BackChess.jpg ... 
-2026-03-03 18:12:23 +0000  10727939 bytes for ./BackChess.jpg
-2026-03-03 18:12:23 +0000 [MT] /usr/bin/ditto exited with 0
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
-2026-03-03 18:12:23 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0x9ddd32340; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0x9db9d0150:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd323a0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90000; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+2026-03-05 16:29:06 +0000  14319 bytes for ./embedded.mobileprovision
+2026-03-05 16:29:06 +0000  copying file ./Info.plist ... 
+2026-03-05 16:29:06 +0000  1432 bytes for ./Info.plist
+2026-03-05 16:29:06 +0000  copying file ./samurai2.mp3 ... 
+2026-03-05 16:29:06 +0000  58591076 bytes for ./samurai2.mp3
+copying file ./PkgInfo ... 
+2026-03-05 16:29:06 +0000  8 bytes for ./PkgInfo
+copying file ./BackChess.jpg ... 
+2026-03-05 16:29:06 +0000  10727939 bytes for ./BackChess.jpg
+2026-03-05 16:29:06 +0000 [MT] /usr/bin/ditto exited with 0
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionEmbedProfileStep
+2026-03-05 16:29:06 +0000 [MT] Skipping profile for item: <IDEDistributionItem: 0xc81d2e9a0; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0xc7f9d8000:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2e880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b7300; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
-), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0x9ddd318c0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'>
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionSymbolsStep
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionAppThinningStep
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionArchThinningStep
-2026-03-03 18:12:23 +0000 [MT] Archs to thin for item /Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework are []
-2026-03-03 18:12:23 +0000 [MT] Archs to thin for item /Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app are []
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionODRStep
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
-2026-03-03 18:12:23 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
-2026-03-03 18:12:23 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionCodesignStep
-2026-03-03 18:12:23 +0000 [MT] Entitlements for <IDEDistributionItem: 0x9ddd32340; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0x9db9d0150:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd323a0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90000; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0xc81d2e040:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'>
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionInfoPlistStep
+2026-03-05 16:29:06 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-03-05 16:29:06 +0000 [MT] Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionAppThinningPlistStep
+2026-03-05 16:29:06 +0000 [MT] Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionSymbolsStep
+2026-03-05 16:29:06 +0000 [MT] Skipping step: IDEDistributionSymbolsStep because it said so
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionAppThinningStep
+2026-03-05 16:29:06 +0000 [MT] Skipping step: IDEDistributionAppThinningStep because it said so
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionArchThinningStep
+2026-03-05 16:29:06 +0000 [MT] Archs to thin for item /Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework are []
+2026-03-05 16:29:06 +0000 [MT] Archs to thin for item /Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app are []
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionODRStep
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionStripXattrsStep
+2026-03-05 16:29:06 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-03-05 16:29:06 +0000 [MT] Skipping stripping extended attributes because the codesign step will strip them.
+2026-03-05 16:29:06 +0000 [MT] Processing step: IDEDistributionCodesignStep
+2026-03-05 16:29:06 +0000 [MT] Entitlements for <IDEDistributionItem: 0xc81d2e9a0; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0xc7f9d8000:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2e880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b7300; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
-), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0x9ddd318c0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'>: {
+), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0xc81d2e040:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'>: {
 }
-2026-03-03 18:12:23 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
-2026-03-03 18:12:23 +0000 [MT] Entitlements for <IDEDistributionItem: 0x9ddd32340; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0x9db9d0150:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd323a0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90180; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+2026-03-05 16:29:06 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-03-05 16:29:06 +0000 [MT] Entitlements for <IDEDistributionItem: 0xc81d2e9a0; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0xc7f9d8000:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2e880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b6f40; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
-), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0x9ddd318c0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'> are: {
+), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0xc81d2e040:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'> are: {
 }
-2026-03-03 18:12:23 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x9ddd32340; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0x9db9d0150:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd323a0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90180; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+2026-03-05 16:29:06 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0xc81d2e9a0; bundleID='com.dotlottie.DotLottiePlayer', path='<DVTFilePath:0xc7f9d8000:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2e880; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b6f40; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
-), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0x9ddd318c0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'> to: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/entitlements~~~sRoZ6I
-2026-03-03 18:12:23 +0000 [MT] invoking codesign: <NSConcreteTask: 0x9dbbef200; launchPath='/usr/bin/codesign', arguments='(
+), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='(null)', teamID='QPGAAW2VT2', identifier='com.dotlottie.DotLottiePlayer', executablePath='<DVTFilePath:0xc81d2e040:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer'>', hardenedRuntime='0'>'> to: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/entitlements~~~qWYYhV
+2026-03-05 16:29:06 +0000 [MT] invoking codesign: <NSConcreteTask: 0xc7fbe4a00; launchPath='/usr/bin/codesign', arguments='(
     "-f",
     "-s",
     397F324F31B38643EC23C75AE13854ADDBA12111,
     "--entitlements",
-    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/entitlements~~~sRoZ6I",
+    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/entitlements~~~qWYYhV",
     "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
     "--generate-entitlement-der",
     "--strip-disallowed-xattrs",
     "-vvv",
-    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework"
+    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework"
 )'>
-2026-03-03 18:12:23 +0000 [MT] codesign output: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework: replacing existing signature
-/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework: signed bundle with Mach-O thin (arm64) [com.dotlottie.DotLottiePlayer]
-2026-03-03 18:12:23 +0000 [MT] Entitlements for <IDEDistributionItem: 0x9ddd322e0; bundleID='Leonardo.GameOfLifeIOS', path='<DVTFilePath:0x9db9176b0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd32520; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90000; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+2026-03-05 16:29:06 +0000 [MT] codesign output: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework: replacing existing signature
+/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework: signed bundle with Mach-O thin (arm64) [com.dotlottie.DotLottiePlayer]
+2026-03-05 16:29:06 +0000 [MT] Entitlements for <IDEDistributionItem: 0xc81d2ea00; bundleID='Leonardo.GameOfLifeIOS', path='<DVTFilePath:0xc7f91f6b0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2ea60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b7300; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
 ), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='{
     "application-identifier" = "QPGAAW2VT2.Leonardo.GameOfLifeIOS";
     "com.apple.developer.team-identifier" = QPGAAW2VT2;
     "get-task-allow" = 1;
-}', teamID='QPGAAW2VT2', identifier='Leonardo.GameOfLifeIOS', executablePath='<DVTFilePath:0x9ddd31140:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/GameOfLifeIOS'>', hardenedRuntime='0'>'>: {
+}', teamID='QPGAAW2VT2', identifier='Leonardo.GameOfLifeIOS', executablePath='<DVTFilePath:0xc81d2d620:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/GameOfLifeIOS'>', hardenedRuntime='0'>'>: {
     "application-identifier" = "QPGAAW2VT2.Leonardo.GameOfLifeIOS";
     "com.apple.developer.team-identifier" = QPGAAW2VT2;
     "get-task-allow" = 1;
 }
-2026-03-03 18:12:23 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
-2026-03-03 18:12:23 +0000 [MT] Entitlements for <IDEDistributionItem: 0x9ddd322e0; bundleID='Leonardo.GameOfLifeIOS', path='<DVTFilePath:0x9db9176b0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd32520; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90180; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+2026-03-05 16:29:06 +0000 [MT] Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-03-05 16:29:06 +0000 [MT] Entitlements for <IDEDistributionItem: 0xc81d2ea00; bundleID='Leonardo.GameOfLifeIOS', path='<DVTFilePath:0xc7f91f6b0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2ea60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b6f40; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
 ), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='{
     "application-identifier" = "QPGAAW2VT2.Leonardo.GameOfLifeIOS";
     "com.apple.developer.team-identifier" = QPGAAW2VT2;
     "get-task-allow" = 1;
-}', teamID='QPGAAW2VT2', identifier='Leonardo.GameOfLifeIOS', executablePath='<DVTFilePath:0x9ddd31140:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/GameOfLifeIOS'>', hardenedRuntime='0'>'> are: {
+}', teamID='QPGAAW2VT2', identifier='Leonardo.GameOfLifeIOS', executablePath='<DVTFilePath:0xc81d2d620:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/GameOfLifeIOS'>', hardenedRuntime='0'>'> are: {
     "application-identifier" = "QPGAAW2VT2.Leonardo.GameOfLifeIOS";
     "com.apple.developer.team-identifier" = QPGAAW2VT2;
     "get-task-allow" = 1;
 }
-2026-03-03 18:12:23 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0x9ddd322e0; bundleID='Leonardo.GameOfLifeIOS', path='<DVTFilePath:0x9db9176b0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x9ddd32520; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x9dba90180; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
+2026-03-05 16:29:06 +0000 [MT] Writing entitlements for <IDEDistributionItem: 0xc81d2ea00; bundleID='Leonardo.GameOfLifeIOS', path='<DVTFilePath:0xc7f91f6b0:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xc81d2ea60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xc7f8b6f40; name='Apple Development: elcapitan10001@gmail.com (2UQ7Y7HJ4R)', hash='397F324F31B38643EC23C75AE13854ADDBA12111', serialNumber='775166C80B732251988A198A4B7A0E82', certificateKinds='(
     "1.2.840.113635.100.6.1.12",
     "1.2.840.113635.100.6.1.2"
 ), issueDate='2025-12-30 13:25:55 +0000''>', entitlements='{
     "application-identifier" = "QPGAAW2VT2.Leonardo.GameOfLifeIOS";
     "com.apple.developer.team-identifier" = QPGAAW2VT2;
     "get-task-allow" = 1;
-}', teamID='QPGAAW2VT2', identifier='Leonardo.GameOfLifeIOS', executablePath='<DVTFilePath:0x9ddd31140:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/GameOfLifeIOS'>', hardenedRuntime='0'>'> to: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/entitlements~~~QhvzFw
-2026-03-03 18:12:23 +0000 [MT] invoking codesign: <NSConcreteTask: 0x9dbbed950; launchPath='/usr/bin/codesign', arguments='(
+}', teamID='QPGAAW2VT2', identifier='Leonardo.GameOfLifeIOS', executablePath='<DVTFilePath:0xc81d2d620:'/Users/yaroslavyakovlev/ACoding/coding 2026/projects/GameOfLifeIOS/build/GameOfLifeIOS.xcarchive/Products/Applications/GameOfLifeIOS.app/GameOfLifeIOS'>', hardenedRuntime='0'>'> to: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/entitlements~~~OBTZTq
+2026-03-05 16:29:06 +0000 [MT] invoking codesign: <NSConcreteTask: 0xc80d040a0; launchPath='/usr/bin/codesign', arguments='(
     "-f",
     "-s",
     397F324F31B38643EC23C75AE13854ADDBA12111,
     "--entitlements",
-    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/entitlements~~~QhvzFw",
+    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/entitlements~~~OBTZTq",
     "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
     "--generate-entitlement-der",
     "--strip-disallowed-xattrs",
     "-vvv",
-    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app"
+    "/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app"
 )'>
-2026-03-03 18:12:23 +0000 [MT] codesign output: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app: replacing existing signature
-/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app: signed app bundle with Mach-O thin (arm64) [Leonardo.GameOfLifeIOS]
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
-2026-03-03 18:12:23 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
-2026-03-03 18:12:23 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root' '/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Packages/GameOfLifeIOS.ipa'
-2026-03-03 18:12:23 +0000  >>> Copying /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root 
-2026-03-03 18:12:23 +0000  copying file ./Payload/GameOfLifeIOS.app/_CodeSignature/CodeResources ... 
-2026-03-03 18:12:23 +0000  5155 bytes for ./Payload/GameOfLifeIOS.app/_CodeSignature/CodeResources
-2026-03-03 18:12:23 +0000  copying file ./Payload/GameOfLifeIOS.app/AppIcon60x60@2x.png ... 
-2026-03-03 18:12:23 +0000  12867 bytes for ./Payload/GameOfLifeIOS.app/AppIcon60x60@2x.png
-2026-03-03 18:12:23 +0000  copying file ./Payload/GameOfLifeIOS.app/SciFiBack.json ... 
-2026-03-03 18:12:23 +0000  89026 bytes for ./Payload/GameOfLifeIOS.app/SciFiBack.json
-2026-03-03 18:12:23 +0000  copying file ./Payload/GameOfLifeIOS.app/GameOfLifeIOS ... 
-2026-03-03 18:12:23 +0000  808464 bytes for ./Payload/GameOfLifeIOS.app/GameOfLifeIOS
-2026-03-03 18:12:23 +0000  copying file ./Payload/GameOfLifeIOS.app/LoopBack.json ... 
-2026-03-03 18:12:23 +0000  19533 bytes for ./Payload/GameOfLifeIOS.app/LoopBack.json
-2026-03-03 18:12:23 +0000  copying file ./Payload/GameOfLifeIOS.app/Assets.car ... 
-2026-03-03 18:12:24 +0000  15646376 bytes for ./Payload/GameOfLifeIOS.app/Assets.car
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/AppIcon76x76@2x~ipad.png ... 
-2026-03-03 18:12:24 +0000  18357 bytes for ./Payload/GameOfLifeIOS.app/AppIcon76x76@2x~ipad.png
-copying file ./Payload/GameOfLifeIOS.app/Meditation Skull.json ... 
-2026-03-03 18:12:24 +0000  86718 bytes for ./Payload/GameOfLifeIOS.app/Meditation Skull.json
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/batman.json ... 
-2026-03-03 18:12:24 +0000  30988 bytes for ./Payload/GameOfLifeIOS.app/batman.json
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/build_ipa.sh ... 
-2026-03-03 18:12:24 +0000  2205 bytes for ./Payload/GameOfLifeIOS.app/build_ipa.sh
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources ... 
-2026-03-03 18:12:24 +0000  1798 bytes for ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer ... 
-2026-03-03 18:12:24 +0000  3000304 bytes for ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/Info.plist ... 
-2026-03-03 18:12:24 +0000  767 bytes for ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/Info.plist
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/embedded.mobileprovision ... 
-2026-03-03 18:12:24 +0000  14319 bytes for ./Payload/GameOfLifeIOS.app/embedded.mobileprovision
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/Info.plist ... 
-2026-03-03 18:12:24 +0000  1432 bytes for ./Payload/GameOfLifeIOS.app/Info.plist
-2026-03-03 18:12:24 +0000  copying file ./Payload/GameOfLifeIOS.app/samurai2.mp3 ... 
-2026-03-03 18:12:25 +0000  58591076 bytes for ./Payload/GameOfLifeIOS.app/samurai2.mp3
-2026-03-03 18:12:25 +0000  copying file ./Payload/GameOfLifeIOS.app/PkgInfo ... 
-8 bytes for ./Payload/GameOfLifeIOS.app/PkgInfo
-copying file ./Payload/GameOfLifeIOS.app/BackChess.jpg ... 
-2026-03-03 18:12:25 +0000  10727939 bytes for ./Payload/GameOfLifeIOS.app/BackChess.jpg
-2026-03-03 18:12:25 +0000 [MT] /usr/bin/ditto exited with 0
-2026-03-03 18:12:25 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
-2026-03-03 18:12:25 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
-2026-03-03 18:12:25 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
-2026-03-03 18:12:25 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x9dbbc9570:'/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>
-2026-03-03 18:12:25 +0000 [MT] IDEDistributionItem init <DVTFilePath:0x9dbbc82a0:'/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~TsUYoI/Root/Payload/GameOfLifeIOS.app'>
-2026-03-03 18:12:25 +0000 [MT] Processing step: IDEDistributionCreateManifestStep
+2026-03-05 16:29:07 +0000 [MT] codesign output: /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app: replacing existing signature
+/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app: signed app bundle with Mach-O thin (arm64) [Leonardo.GameOfLifeIOS]
+2026-03-05 16:29:07 +0000 [MT] Processing step: IDEDistributionZipODRItemStep
+2026-03-05 16:29:07 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-03-05 16:29:07 +0000 [MT] Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-03-05 16:29:07 +0000 [MT] Processing step: IDEDistributionCreateIPAStep
+2026-03-05 16:29:07 +0000 [MT] Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root' '/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Packages/GameOfLifeIOS.ipa'
+2026-03-05 16:29:07 +0000  >>> Copying /var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root 
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/_CodeSignature/CodeResources ... 
+2026-03-05 16:29:07 +0000  5791 bytes for ./Payload/GameOfLifeIOS.app/_CodeSignature/CodeResources
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/WoodDark.png ... 
+2026-03-05 16:29:07 +0000  213499 bytes for ./Payload/GameOfLifeIOS.app/WoodDark.png
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/WoodLight.png ... 
+2026-03-05 16:29:07 +0000  152331 bytes for ./Payload/GameOfLifeIOS.app/WoodLight.png
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/AppIcon60x60@2x.png ... 
+2026-03-05 16:29:07 +0000  12867 bytes for ./Payload/GameOfLifeIOS.app/AppIcon60x60@2x.png
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/ChessSound.mp3 ... 
+2026-03-05 16:29:07 +0000  26374 bytes for ./Payload/GameOfLifeIOS.app/ChessSound.mp3
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/SciFiBack.json ... 
+2026-03-05 16:29:07 +0000  89026 bytes for ./Payload/GameOfLifeIOS.app/SciFiBack.json
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/GameOfLifeIOS ... 
+2026-03-05 16:29:07 +0000  876480 bytes for ./Payload/GameOfLifeIOS.app/GameOfLifeIOS
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/LoopBack.json ... 
+2026-03-05 16:29:07 +0000  19533 bytes for ./Payload/GameOfLifeIOS.app/LoopBack.json
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/Assets.car ... 
+2026-03-05 16:29:07 +0000  15822488 bytes for ./Payload/GameOfLifeIOS.app/Assets.car
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/AppIcon76x76@2x~ipad.png ... 
+2026-03-05 16:29:07 +0000  18357 bytes for ./Payload/GameOfLifeIOS.app/AppIcon76x76@2x~ipad.png
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/Meditation Skull.json ... 
+2026-03-05 16:29:07 +0000  86718 bytes for ./Payload/GameOfLifeIOS.app/Meditation Skull.json
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/batman.json ... 
+2026-03-05 16:29:07 +0000  30988 bytes for ./Payload/GameOfLifeIOS.app/batman.json
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/build_ipa.sh ... 
+2026-03-05 16:29:07 +0000  2205 bytes for ./Payload/GameOfLifeIOS.app/build_ipa.sh
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources ... 
+2026-03-05 16:29:07 +0000  1798 bytes for ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/_CodeSignature/CodeResources
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer ... 
+2026-03-05 16:29:07 +0000  3000304 bytes for ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/DotLottiePlayer
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/Info.plist ... 
+2026-03-05 16:29:07 +0000  767 bytes for ./Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework/Info.plist
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/embedded.mobileprovision ... 
+2026-03-05 16:29:07 +0000  14319 bytes for ./Payload/GameOfLifeIOS.app/embedded.mobileprovision
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/Info.plist ... 
+2026-03-05 16:29:07 +0000  1432 bytes for ./Payload/GameOfLifeIOS.app/Info.plist
+2026-03-05 16:29:07 +0000  copying file ./Payload/GameOfLifeIOS.app/samurai2.mp3 ... 
+2026-03-05 16:29:08 +0000  58591076 bytes for ./Payload/GameOfLifeIOS.app/samurai2.mp3
+2026-03-05 16:29:08 +0000  copying file ./Payload/GameOfLifeIOS.app/PkgInfo ... 
+2026-03-05 16:29:08 +0000  8 bytes for ./Payload/GameOfLifeIOS.app/PkgInfo
+2026-03-05 16:29:08 +0000  copying file ./Payload/GameOfLifeIOS.app/BackChess.jpg ... 
+2026-03-05 16:29:09 +0000  10727939 bytes for ./Payload/GameOfLifeIOS.app/BackChess.jpg
+2026-03-05 16:29:09 +0000 [MT] /usr/bin/ditto exited with 0
+2026-03-05 16:29:09 +0000 [MT] Processing step: IDEDistributionAppStoreInformationStep
+2026-03-05 16:29:09 +0000 [MT] Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2026-03-05 16:29:09 +0000 [MT] Processing step: IDEDistributionGenerateProcessedDistributionItems
+2026-03-05 16:29:09 +0000 [MT] IDEDistributionItem init <DVTFilePath:0xc7fbc0cb0:'/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app/Frameworks/DotLottiePlayer.framework'>
+2026-03-05 16:29:09 +0000 [MT] IDEDistributionItem init <DVTFilePath:0xc7fae9110:'/var/folders/85/tt_xwj5s3g9_qh1c2tq5fjzm0000gn/T/XcodeDistPipeline.~~~hpeqkF/Root/Payload/GameOfLifeIOS.app'>
+2026-03-05 16:29:09 +0000 [MT] Processing step: IDEDistributionCreateManifestStep

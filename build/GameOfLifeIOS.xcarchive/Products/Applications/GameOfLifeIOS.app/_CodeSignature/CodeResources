@@ -14,15 +14,19 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		eKvz4I9E9rupujIXMGq8nXl0Gi0=
+		xE4Ia7F2TEEPtYPEQ+G2MK4fqhw=
 		</data>
 		<key>BackChess.jpg</key>
 		<data>
 		8w2IlMhaLC9sGGKhHWOffWfNPac=
 		</data>
+		<key>ChessSound.mp3</key>
+		<data>
+		Kg8JD2DjKhX+yJcWBwnVwWoybWQ=
+		</data>
 		<key>Frameworks/DotLottiePlayer.framework/DotLottiePlayer</key>
 		<data>
-		8YTdJ47ncvMn68ctUeb0KZl0roA=
+		a7B/2enAP6yKiuiTFAUTx3u6gOc=
 		</data>
 		<key>Frameworks/DotLottiePlayer.framework/Info.plist</key>
 		<data>
@@ -52,6 +56,14 @@
 		<data>
 		yLZ6Vac1t2rkiQxT+BxuwcWUpUM=
 		</data>
+		<key>WoodDark.png</key>
+		<data>
+		7Px3Qs0H8vPSKHFm7j3RHzeCL+0=
+		</data>
+		<key>WoodLight.png</key>
+		<data>
+		5SINq0tww6FHsUZjc3cyy1NDlgA=
+		</data>
 		<key>batman.json</key>
 		<data>
 		2Ksiz0oWPm6NTmdrBLFaonAlwYE=
@@ -62,7 +74,7 @@
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		DTWC34VEWZVpXAN9YyNl80ba0R0=
+		dL4QzkwBwuuiujQiIHq7Zn1uGxA=
 		</data>
 		<key>samurai2.mp3</key>
 		<data>
@@ -89,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R28toqf5I10/SNjI805LyscouNjCoqSchkKnz1axgk0=
+			iUzkWn/Kv1lFd0kfoLaVDkE7z1NENHsMwKgJDJ8AwOA=
 			</data>
 		</dict>
 		<key>BackChess.jpg</key>
@@ -99,11 +111,18 @@
 			8pe6I4WaNbVvNXGkoMQh2PBzB4xK2vCmq2eSdY6eguE=
 			</data>
 		</dict>
+		<key>ChessSound.mp3</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zhbitNprNJo4sZAug5hHmkpaosNP0hhu4Sk6YFP7siM=
+			</data>
+		</dict>
 		<key>Frameworks/DotLottiePlayer.framework/DotLottiePlayer</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xdxmUVecinPNMmcwZe8X5PGBn8ULtq1dqrKNvhLsJnY=
+			DBKYsUL9vulSTQQ87JNlmup7/BVees0xRHgFCcpkvd4=
 			</data>
 		</dict>
 		<key>Frameworks/DotLottiePlayer.framework/Info.plist</key>
@@ -141,6 +160,20 @@
 			iAbM7x6HS0MilXLoYh2YeB3uapdTmEogx5OBvCqID0U=
 			</data>
 		</dict>
+		<key>WoodDark.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xx9WcIN3LBr+jEW2Rb5+Pr3nK+alSfBjZyArg+sGr1g=
+			</data>
+		</dict>
+		<key>WoodLight.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TnFmCXUPlMQyDRsvOI7y7oxRArH0h/+7i+jipyc5E/w=
+			</data>
+		</dict>
 		<key>batman.json</key>
 		<dict>
 			<key>hash2</key>
@@ -159,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qxLumCyg+V0QNCvmbl/yjUczemLLm/qwO2tZUInD7SM=
+			KA36oGa6UmlhsMt1XY+wW04dk8zLeG24YbMjPKsDN9M=
 			</data>
 		</dict>
 		<key>samurai2.mp3</key>

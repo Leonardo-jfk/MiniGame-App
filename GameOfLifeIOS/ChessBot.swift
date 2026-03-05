@@ -37,7 +37,7 @@ struct ChessBot: View {
             
             VStack(spacing: 15) {
                 // Título DIFERENTE
-                Text("ÉCHECS Bot 2")
+                Text("ÉCHECS Avec Bot")
                     .font(.system(size: 40, weight: .bold, design: .rounded))
                     .foregroundColor(.white)
                     .shadow(color: .purple, radius: 5)
