@@ -168,4 +168,6 @@ To run the project in your local environment, follow these steps:
 5. Press Run (⌘R) to build and launch the app.
 
 
- ⭐ If this project inspires you, consider giving it a star on GitHub!
+---
+
+⭐ If this project inspires you, consider giving it a star on GitHub!
